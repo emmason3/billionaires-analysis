@@ -3,67 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Corruption (CPI) • Billionaires Project</title>
+  <title>Corruption (CPI) • Billionaire Wealth Project</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="header">
-    <h1>Corruption (CPI)</h1>
-    <p>
-      This page focuses on the Corruption Perceptions Index (CPI) and what it suggests about the relationship between perceived corruption and
-      billionaire concentration. CPI is a widely used, country-level indicator published by Transparency International and is useful for comparing
-      governance environments across nations.
-    </p>
-  </div>
-
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="economics.html">Economics</a>
-    <a href="corruption.html">Corruption</a>
-    <a href="gender.html">Gender</a>
-  </div>
-
-  <div class="viz">
-    <h2>Viz C1 · CPI vs Billionaire Count</h2>
-    <div class="meta">Scatter — perceived corruption and billionaire concentration</div>
-    <iframe src="charts/viz_cpi_vs_billionaires_best.html" loading="lazy"></iframe>
-
-    <div class="insights">
-      <h3>Insights</h3>
-      <p>
-        Insight 1: This visualization suggests that countries with higher CPI scores (lower perceived corruption) often have higher billionaire counts,
-        consistent with the idea that predictable rules and stronger investor confidence can support entrepreneurship and large-scale wealth creation.
-        Insight 2: The relationship is not perfectly linear and there are notable exceptions, meaning billionaires can emerge across a range of governance
-        contexts; however, the overall clustering pattern implies that cleaner governance may be especially important for sustaining larger billionaire
-        ecosystems rather than isolated cases. Insight 3: Viewed alongside economic measures, this chart helps separate “wealth presence” from “wealth
-        scalability,” highlighting that governance conditions may influence how efficiently countries translate business growth into many high-net-worth individuals.
+  <main class="container">
+    <header class="hero">
+      <h1>Corruption (CPI)</h1>
+      <p class="subtitle">
+        This page focuses on the Corruption Perceptions Index (CPI) and how perceived corruption relates to the
+        distribution of billionaire wealth across countries.
       </p>
-    </div>
-  </div>
 
+      <nav class="tabs">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="economics.html">Economics</a>
+        <a class="tab active" href="corruption.html">Institutions</a>
+        <a class="tab" href="gender.html">Gender</a>
+      </nav>
+    </header>
 
-  <div class="viz">
-    <h2>Viz C2 · CPI vs Total Billionaire Wealth</h2>
-    <div class="meta">Scatter — perceived corruption and wealth accumulation (country totals)</div>
-    <iframe src="charts/viz10_cpi_vs_total_wealth.html" loading="lazy"></iframe>
+    <!-- ===================== Viz C1 ===================== -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Viz C1 · CPI vs Total Billionaire Wealth</h2>
+        <p class="card-subtitle">Scatter — perceived corruption vs country billionaire wealth totals</p>
+      </div>
 
-    <div class="insights">
-      <h3>Insights</h3>
+      <div class="frame-wrap">
+        <iframe
+          src="charts/viz10_cpi_vs_total_wealth.html"
+          loading="lazy"
+          title="CPI vs Total Billionaire Wealth"
+        ></iframe>
+      </div>
+
+      <div class="insights">
+        <h3>Insights</h3>
+        <p>
+          This chart compares CPI scores with total billionaire wealth by country, suggesting that higher CPI (lower perceived corruption)
+          often coincides with larger pools of billionaire wealth, likely because stable rules and predictable investment climates help large
+          fortunes scale over time. At the same time, the presence of a few high-wealth outliers at lower CPI scores shows that extreme wealth
+          can still accumulate in weaker institutional contexts, potentially through concentrated sectors or market power. Overall, the scatter
+          indicates CPI is not a single “cause” of billionaire wealth, but it is a meaningful contextual factor that helps explain why some
+          countries are better at sustaining large, compounding wealth totals than others.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== Viz C2 ===================== -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Viz C2 · CPI vs Billionaire Count</h2>
+        <p class="card-subtitle">Scatter — perceived corruption vs number of billionaires</p>
+      </div>
+
+      <div class="frame-wrap">
+        <iframe
+          src="charts/viz_cpi_vs_billionaires_best.html"
+          loading="lazy"
+          title="CPI vs Billionaire Count"
+        ></iframe>
+      </div>
+
+      <div class="insights">
+        <h3>Insights</h3>
+        <p>
+          This visualization suggests that countries with higher CPI scores frequently host more billionaires, consistent with the idea that
+          stronger institutions reduce friction for entrepreneurship, scaling businesses, and attracting capital. However, the relationship is
+          not perfectly linear: some countries with moderate CPI still show meaningful billionaire presence, which implies that other forces—
+          like industry specialization, market size, or policy—also matter. Taken together, the pattern supports a balanced conclusion:
+          governance quality appears to be an important enabling condition for building a broad billionaire ecosystem, even if it does not fully
+          determine where every billionaire exists.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
       <p>
-        Insight 1: Comparing CPI to total billionaire wealth emphasizes that governance may relate not only to how many billionaires a country has, but also
-        to the magnitude of fortunes that can accumulate and compound over time. Insight 2: Countries that show high wealth totals despite lower CPI scores
-        illustrate that extreme wealth can still form under weaker perceived governance, possibly through resource concentration, highly centralized industries,
-        or market power; these cases are important because they show institutions can shape different pathways to wealth rather than acting as a simple on/off switch.
-        Insight 3: Taken together with the CPI vs count chart, this figure helps distinguish broad billionaire participation from top-heavy wealth concentration,
-        clarifying whether governance conditions align more strongly with having many billionaires or with producing a small number of mega-fortunes.
+        Note: CPI is perception-based and should be interpreted as a comparative indicator rather than a direct measure of actual corruption.
       </p>
-    </div>
-  </div>
-
-  <div class="footer">
-    Note: CPI is perception-based and should be interpreted as a comparative indicator rather than a direct measure of actual corruption.
-  </div>
+    </footer>
+  </main>
 
   <script src="app.js"></script>
 </body>
