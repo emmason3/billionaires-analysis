@@ -1,75 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Billionaires • Prosperity • Institutions</title>
+  <meta charset="UTF-8" />
+  <title>Billionaires, Prosperity, and Institutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1a1f36, #050814);
+      color: #eaeaf0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #b8bfd9;
+    }
+
+    section.viz-card {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+
+    section.viz-card h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .viz-subtitle {
+      color: #aab1d6;
+      margin-bottom: 18px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 620px;
+      border: none;
+      border-radius: 12px;
+      background: white;
+    }
+
+    .insights {
+      margin-top: 18px;
+      background: rgba(0,0,0,0.35);
+      padding: 18px 22px;
+      border-radius: 12px;
+    }
+
+    .insights ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .insights li {
+      margin: 8px 0;
+      color: #d3d7ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #7f86b2;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="header">
+<header>
   <h1>Billionaires, Prosperity, and Institutions</h1>
   <p>
-    This project analyzes global billionaire concentration and wealth, and how they relate to
-    GDP per capita, institutional quality (CPI), and gender inequality. Each visualization includes
-    three key insights.
+    An empirical exploration of how economic prosperity, institutional quality,
+    population size, industry concentration, and gender representation relate to
+    billionaire wealth across countries.
   </p>
-</div>
+</header>
 
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="economics.html">Economics</a>
-  <a href="corruption.html">Corruption</a>
-  <a href="gender.html">Gender</a>
-</div>
+<!-- ================= MAPS ================= -->
 
-<div class="viz">
-  <h2>Viz 01 • Billionaire Count by Country</h2>
-  <div class="meta">Choropleth map — concentration of billionaires</div>
+<section class="viz-card">
+  <h2>Viz 01 · Billionaire Count by Country</h2>
+  <p class="viz-subtitle">Global distribution of billionaire concentration</p>
   <iframe src="charts/viz01_billionaire_count_map.html"></iframe>
-  <div class="insights">
-    <h3>Insights</h3>
-    <ul>
-      <li>Billionaires are concentrated in a small set of countries rather than evenly distributed globally.</li>
-      <li>Large financial and innovation ecosystems appear linked to higher billionaire presence.</li>
-      <li>Many countries show near-zero counts, illustrating extreme global inequality at the top end.</li>
-    </ul>
-  </div>
-</div>
+</section>
 
-<div class="viz">
-  <h2>Viz 02 • Total Billionaire Wealth by Country</h2>
-  <div class="meta">Choropleth map — trillions USD (scale-correct)</div>
+<section class="viz-card">
+  <h2>Viz 02 · Total Billionaire Wealth by Country</h2>
+  <p class="viz-subtitle">Aggregate billionaire wealth (trillions USD)</p>
   <iframe src="charts/viz02_total_wealth_trillions_map.html"></iframe>
-  <div class="insights">
-    <h3>Insights</h3>
-    <ul>
-      <li>Total billionaire wealth is even more concentrated than billionaire counts.</li>
-      <li>A few countries dominate global private wealth, with clear outliers at the top.</li>
-      <li>This complements Viz 01 by measuring “wealth intensity,” not just headcount.</li>
-    </ul>
-  </div>
-</div>
+</section>
 
-<div class="viz">
-  <h2>Viz 05 • GDP per Capita, CPI, and Billionaire Count</h2>
-  <div class="meta">Bubble chart — prosperity + institutions + billionaire concentration</div>
+<!-- ================= ECONOMICS ================= -->
+
+<section class="viz-card">
+  <h2>Viz 05 · GDP per Capita, CPI, and Billionaire Count</h2>
+  <p class="viz-subtitle">Prosperity and institutions vs. billionaire concentration</p>
   <iframe src="charts/viz05_bubble_gdp_count_cpi.html"></iframe>
+
   <div class="insights">
-    <h3>Insights</h3>
     <ul>
-      <li>Countries with higher GDP per capita generally host more billionaires.</li>
-      <li>Higher CPI (lower corruption) often aligns with larger billionaire presence, but exceptions exist.</li>
-      <li>Outliers suggest billionaire ecosystems depend on multiple factors beyond prosperity alone.</li>
+      <li>Countries with higher GDP per capita tend to host more billionaires.</li>
+      <li>Lower corruption correlates with higher billionaire concentration.</li>
+      <li>Economic prosperity alone does not fully explain billionaire presence.</li>
     </ul>
   </div>
-</div>
+</section>
 
-<div class="footer">
-  Hosted on GitHub Pages • Files embedded as interactive Plotly HTML
-</div>
+<section class="viz-card">
+  <h2>Viz 06 · Top 15 Countries by Total Billionaire Wealth</h2>
+  <iframe src="charts/viz06_top15_total_wealth.html"></iframe>
+</section>
 
-<script src="app.js"></script>
+<section class="viz-card">
+  <h2>Viz 09 · Top 15 Countries by Billionaire Count</h2>
+  <iframe src="charts/viz09_top15_billionaire_count.html"></iframe>
+</section>
+
+<section class="viz-card">
+  <h2>Viz 10 · CPI vs Total Billionaire Wealth</h2>
+  <p class="viz-subtitle">Institutional quality and wealth accumulation</p>
+  <iframe src="charts/viz10_cpi_vs_total_wealth.html"></iframe>
+</section>
+
+<!-- ================= INDUSTRY ================= -->
+
+<section class="viz-card">
+  <h2>Viz 08 · Billionaire Wealth by Industry</h2>
+  <p class="viz-subtitle">
+    Industry concentration of billionaire wealth — identifying dominant sectors
+  </p>
+
+  <iframe src="charts/viz08_treemap_industry.html"></iframe>
+
+  <div class="insights">
+    <ul>
+      <li>Technology and finance dominate global billionaire wealth.</li>
+      <li>Consumer, manufacturing, and energy remain significant contributors.</li>
+      <li>Wealth concentration varies strongly by industry structure.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= DISTRIBUTIONS ================= -->
+
+<section class="viz-card">
+  <h2>Viz 07 · Distribution of Billionaire Net Worth</h2>
+  <p class="viz-subtitle">Log-scale distribution highlighting inequality</p>
+  <iframe src="charts/viz07_log_box_net_worth_dark.html"></iframe>
+</section>
+
+<!-- ================= GENDER ================= -->
+
+<section class="viz-card">
+  <h2>Viz G1 · Gender Composition of Billionaires</h2>
+  <iframe src="charts/vizG1_gender_donut_dark.html"></iframe>
+</section>
+
+<section class="viz-card">
+  <h2>Viz G2 · Billionaire Wealth by Gender</h2>
+  <iframe src="charts/vizG2_gender_wealth_box_dark.html"></iframe>
+</section>
+
+<section class="viz-card">
+  <h2>Viz G3 · Female Share of Billionaires by Country</h2>
+  <iframe src="charts/vizG3_female_share_dark.html"></iframe>
+</section>
+
+<!-- ================= POPULATION ================= -->
+
+<section class="viz-card">
+  <h2>Viz P1 · Population Size and Billionaire Count</h2>
+  <p class="viz-subtitle">Does population scale explain billionaire presence?</p>
+  <iframe src="charts/viz_population_bubbles.html"></iframe>
+</section>
+
+<footer>
+  Principles of Computing · Final Project<br>
+  Data sources: Forbes, World Bank, Transparency International
+</footer>
+
 </body>
 </html>
