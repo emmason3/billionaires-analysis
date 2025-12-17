@@ -5,142 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Corruption (CPI) • Billionaire Wealth Project</title>
 
-  <style>
-    :root{
-      --bg0:#050914;
-      --bg1:#081026;
-      --card:#0b132a;
-      --card2:#0a1226;
-      --text:#e9eefb;
-      --muted:#b8c3dd;
-      --border: rgba(255,255,255,0.12);
-      --shadow: 0 18px 60px rgba(0,0,0,0.45);
-      --radius: 18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1100px 500px at 15% 10%, rgba(120,160,255,0.25), transparent 60%),
-        radial-gradient(900px 450px at 70% 15%, rgba(120,255,220,0.10), transparent 65%),
-        linear-gradient(180deg, var(--bg1), var(--bg0) 55%, #04060f);
-      min-height:100vh;
-    }
-    .container{
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 42px 18px 70px;
-    }
-    .hero{
-      padding: 10px 6px 24px;
-    }
-    h1{
-      margin:0 0 10px;
-      font-size: 54px;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-    }
-    .subtitle{
-      margin:0 0 18px;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.5;
-      max-width: 980px;
-    }
-    .tabs{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top: 16px;
-    }
-    .tab{
-      display:inline-flex;
-      align-items:center;
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      color: #cfe0ff;
-      text-decoration:none;
-      background: rgba(255,255,255,0.03);
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-    }
-    .tab:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,0.06);
-      border-color: rgba(255,255,255,0.18);
-    }
-    .tab.active{
-      background: rgba(120,160,255,0.18);
-      border-color: rgba(120,160,255,0.38);
-      color: #ffffff;
-    }
-
-    .card{
-      margin-top: 18px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .card-head{
-      padding: 18px 20px 12px;
-      background: rgba(255,255,255,0.02);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    h2{
-      margin:0 0 6px;
-      font-size: 26px;
-      letter-spacing: -0.01em;
-    }
-    .card-subtitle{
-      margin:0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    /* iframe wrapper */
-    .frame-wrap{
-      background:#ffffff;
-      margin: 16px 18px 6px;
-      border-radius: 14px;
-      overflow:hidden;
-      border: 1px solid rgba(0,0,0,0.10);
-    }
-    iframe{
-      width:100%;
-      height: 650px;
-      border:0;
-      display:block;
-      background:#fff;
-    }
-
-    .insights{
-      padding: 14px 20px 18px;
-    }
-    .insights h3{
-      margin:0 0 8px;
-      font-size: 16px;
-      letter-spacing: .02em;
-      text-transform: uppercase;
-      color:#dbe6ff;
-      opacity:.9;
-    }
-    .insights p{
-      margin:0;
-      color: #d6def3;
-      line-height: 1.55;
-      font-size: 16px;
-    }
-    .footer{
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 14px;
-      padding: 0 6px;
-    }
-  </style>
+  <!-- Use the SAME site-wide stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -160,6 +26,7 @@
       </nav>
     </header>
 
+    <!-- ===================== Viz C1 ===================== -->
     <section class="card">
       <div class="card-head">
         <h2>Viz C1 · CPI vs Total Billionaire Wealth</h2>
@@ -187,6 +54,7 @@
       </div>
     </section>
 
+    <!-- ===================== Viz C2 ===================== -->
     <section class="card">
       <div class="card-head">
         <h2>Viz C2 · CPI vs Billionaire Count</h2>
@@ -219,5 +87,7 @@
       </p>
     </footer>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
