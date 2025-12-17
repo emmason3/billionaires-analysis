@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Institutions • Billionaires Project</title>
+  <title>Gender • Billionaires Project</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="header">
-    <h1>Institutions (Corruption / CPI)</h1>
+    <h1>Gender</h1>
     <p>
-      This section examines institutional quality using CPI. The core question is whether stronger institutions (higher CPI / lower perceived corruption)
-      are associated with more billionaire presence and higher billionaire wealth, which may reflect stronger property rights, lower friction for investment, and predictable rule enforcement.
+      This section evaluates gender representation among billionaires, how net worth differs across genders, and how female billionaire share varies across countries.
+      These patterns provide a lens on inequality at the extreme upper tail of the wealth distribution.
     </p>
   </div>
 
@@ -23,31 +23,43 @@
   </div>
 
   <div class="viz">
-    <h2>Viz I1 · CPI vs Billionaire Count</h2>
-    <div class="meta">Scatter/bubble — institutional quality and billionaire concentration</div>
-    <iframe src="charts/viz_cpi_vs_billionaires_best.html" loading="lazy"></iframe>
+    <h2>Viz G1 · Gender Composition of Billionaires</h2>
+    <div class="meta">Donut chart — representation by gender</div>
+    <iframe src="charts/vizG1_gender_donut_dark.html" loading="lazy"></iframe>
     <div class="insights">
       <h3>Insights</h3>
       <p>
-        Insight 1: The chart suggests a tendency for higher CPI (cleaner institutions) to align with larger billionaire populations, consistent with the idea that stable institutions support entrepreneurship and capital growth. Insight 2: The presence of exceptions indicates that billionaires can emerge under varied conditions, but the overall pattern implies institutions may affect the scale and stability of wealth ecosystems. Insight 3: This relationship is meaningful because it highlights how non-economic variables—like governance quality—may shape the environment where extreme private wealth forms and persists.
+        Insight 1: The composition chart shows a strong representation gap, indicating that billionaire status is overwhelmingly held by men in this dataset. Insight 2: This gap is meaningful because it suggests unequal access to pathways that generate extreme wealth, such as ownership, scaling businesses, and capital networks. Insight 3: Interpreting this alongside country and industry structures suggests gender inequality may persist across many wealth ecosystems rather than being isolated to a single region or sector.
       </p>
     </div>
   </div>
 
   <div class="viz">
-    <h2>Viz I2 · CPI vs Total Billionaire Wealth</h2>
-    <div class="meta">Scatter — institutional quality and wealth accumulation</div>
-    <iframe src="charts/viz10_cpi_vs_total_wealth.html" loading="lazy"></iframe>
+    <h2>Viz G2 · Billionaire Net Worth by Gender</h2>
+    <div class="meta">Box plot — distribution and outliers by gender</div>
+    <iframe src="charts/vizG2_gender_wealth_box_dark.html" loading="lazy"></iframe>
     <div class="insights">
       <h3>Insights</h3>
       <p>
-        Insight 1: This plot connects institutional quality to the total scale of billionaire wealth, suggesting that cleaner institutions often correlate with higher wealth totals, not just more individuals. Insight 2: Countries with high wealth but weaker CPI can be interpreted as cases where resource concentration, market structure, or political economy allows wealth formation, even if institutions introduce risk or inequality. Insight 3: Together with CPI vs count, this chart helps distinguish whether institutions relate more to producing many billionaires or enabling a smaller set of mega-fortunes to grow and compound.
+        Insight 1: The wealth distributions show large variation within each gender group, indicating that billionaire wealth spans a wide range rather than representing a single level of fortune. Insight 2: Outliers matter because a small number of individuals can drive much of the total wealth, affecting interpretations of country-level totals and inequality. Insight 3: This chart adds depth beyond representation by focusing on wealth magnitude, showing that inequality exists not only in counts but also in the structure of wealth holdings.
+      </p>
+    </div>
+  </div>
+
+  <div class="viz">
+    <h2>Viz G3 · Female Share of Billionaires by Country</h2>
+    <div class="meta">Cross-country comparison — where female representation is higher</div>
+    <iframe src="charts/vizG3_female_share_dark.html" loading="lazy"></iframe>
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: Female share varies substantially by country, implying that representation at the top tail depends on local economic, cultural, and institutional conditions. Insight 2: Some countries may have a small billionaire population but a relatively higher female share, suggesting that inclusion and access can differ from sheer billionaire concentration. Insight 3: This chart is important for interpretation because it prevents the gender story from being purely global-average; it identifies where gender gaps appear narrower or wider and encourages explanation grounded in national contexts.
       </p>
     </div>
   </div>
 
   <div class="footer">
-    Next: view the Gender page for representation and inequality patterns among billionaires.
+    End of site navigation: return to Home for the overview maps and industry structure.
   </div>
 
   <script src="app.js"></script>
