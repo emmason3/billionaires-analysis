@@ -1,60 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Institutions • Billionaires Project</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<div class="viz">
+  <h2>CPI • Corruption / Institutions (All CPI Visualizations)</h2>
+  <div class="meta">A focused set of charts exploring perceived corruption (CPI) and billionaire wealth patterns</div>
 
-<body>
-  <div class="header">
-    <h1>Institutions (Corruption / CPI)</h1>
+  <h2>Viz • CPI vs Total Billionaire Wealth</h2>
+  <div class="meta">Scatter — institutional quality vs total billionaire wealth</div>
+  <iframe
+    src="charts/viz10_cpi_vs_total_wealth.html"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy"
+    title="CPI vs Total Billionaire Wealth"
+  ></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
     <p>
-      This page focuses on the Corruption Perceptions Index (CPI) and what it suggests about the relationship between institutional quality and extreme wealth.
-      CPI is an imperfect but widely used proxy for perceived public-sector corruption, and it provides a way to compare governance environments across countries.
+      This chart compares CPI scores with total billionaire wealth by country, showing that higher CPI (lower perceived corruption) often coincides with larger pools of billionaire wealth, while also highlighting exceptions where wealth accumulates even under weaker institutional conditions.
     </p>
   </div>
 
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="economics.html">Economics</a>
-    <a href="corruption.html">Institutions</a>
-    <a href="gender.html">Gender</a>
+  <h2>Viz • CPI vs Billionaire Count</h2>
+  <div class="meta">Scatter — institutional quality vs number of billionaires</div>
+  <iframe
+    src="charts/viz_cpi_vs_billionaire_count.html"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy"
+    title="CPI vs Billionaire Count"
+  ></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <p>
+      This visualization tests whether cleaner institutions are associated with more billionaires overall, helping separate “more wealth per billionaire” patterns from simple differences in billionaire population size across countries.
+    </p>
   </div>
 
-  <!-- Viz I1 -->
-  <div class="viz">
-    <h2>Viz I1 · CPI vs Billionaire Count</h2>
-    <div class="meta">Scatter — institutional quality and billionaire concentration</div>
-    <iframe src="charts/viz_cpi_vs_billionaires_best.html" loading="lazy"></iframe>
-
-    <div class="insights">
-      <h3>Insights</h3>
-      <p>
-        Insight 1: This chart suggests that countries with higher CPI scores (lower perceived corruption) often have higher billionaire counts, which is consistent with the idea that predictable rules, stronger property rights, and higher investor confidence can support entrepreneurial growth and large-scale wealth creation. Insight 2: The relationship is not perfectly linear, and the presence of outliers indicates that billionaires can emerge in diverse institutional contexts; however, the overall pattern implies that cleaner governance environments may be especially important for scaling a large billionaire population rather than producing isolated cases. Insight 3: Interpreted alongside economic indicators, this visualization helps separate “wealthy because of prosperity” from “wealthy in spite of institutional friction,” highlighting that institutions can shape how effectively countries translate economic activity into durable, high-end wealth accumulation.
-      </p>
-    </div>
+  <h2>Viz • CPI vs Billionaire Wealth per Capita</h2>
+  <div class="meta">Scatter — institutional quality vs billionaire wealth normalized by population</div>
+  <iframe
+    src="charts/viz_cpi_vs_wealth_per_capita.html"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy"
+    title="CPI vs Billionaire Wealth per Capita"
+  ></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <p>
+      Normalizing billionaire wealth by population makes cross-country comparisons fairer and can reveal smaller countries that “punch above their weight” in wealth concentration, even if their total wealth is lower in absolute terms.
+    </p>
   </div>
 
-  <!-- Viz I2 -->
-  <div class="viz">
-    <h2>Viz I2 · CPI vs Total Billionaire Wealth</h2>
-    <div class="meta">Scatter — institutional quality and wealth accumulation</div>
-    <iframe src="charts/viz10_cpi_vs_total_wealth.html" loading="lazy"></iframe>
-
-    <div class="insights">
-      <h3>Insights</h3>
-      <p>
-        Insight 1: Comparing CPI to total billionaire wealth emphasizes that institutional quality may relate not only to how many billionaires a country has, but also to whether billionaire wealth can grow to very large totals, potentially through deeper capital markets and more stable long-term investment environments. Insight 2: Countries with high wealth totals but lower CPI scores illustrate that extreme wealth can still accumulate under weaker perceived governance, which may reflect resource-driven sectors, concentrated market power, or political economy dynamics; these cases are important because they show that institutions influence wealth pathways, not just wealth presence. Insight 3: Taken together with CPI vs count, this figure helps distinguish whether governance quality is more closely linked to broader billionaire participation or to the compounding of a smaller number of mega-fortunes, strengthening the interpretation of cross-country differences in wealth concentration.
-      </p>
-    </div>
+  <h2>Viz • CPI vs Average Billionaire Wealth</h2>
+  <div class="meta">Scatter — institutional quality vs mean wealth per billionaire</div>
+  <iframe
+    src="charts/viz_cpi_vs_avg_billionaire_wealth.html"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy"
+    title="CPI vs Average Billionaire Wealth"
+  ></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <p>
+      Looking at average wealth per billionaire focuses on how concentrated fortunes are within each country’s billionaire class, which can differ substantially from patterns in billionaire count or total billionaire wealth.
+    </p>
   </div>
 
-  <div class="footer">
-    Note: CPI is perception-based and should be interpreted as a comparative indicator rather than an absolute measure of corruption.
+  <h2>Viz • CPI vs Billionaire Wealth Share of GDP</h2>
+  <div class="meta">Scatter — institutional quality vs billionaire wealth as a share of GDP</div>
+  <iframe
+    src="charts/viz_cpi_vs_wealth_share_gdp.html"
+    style="width:100%; height:520px; border:0;"
+    loading="lazy"
+    title="CPI vs Billionaire Wealth Share of GDP"
+  ></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <p>
+      Expressing billionaire wealth relative to national GDP reframes the question from “who has the most billionaires” to “how dominant billionaire wealth is inside the economy,” which can surface high-concentration countries that are otherwise overlooked.
+    </p>
   </div>
-
+</div>
   <script src="app.js"></script>
 </body>
 </html>
