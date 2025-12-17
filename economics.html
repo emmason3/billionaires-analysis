@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Economics • Billionaires Project</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<div class="header">
-  <h1>Economics</h1>
-  <p>How billionaire concentration relates to prosperity (GDP per capita) and the distribution of wealth across countries.</p>
-</div>
-
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="economics.html">Economics</a>
-  <a href="corruption.html">Corruption</a>
-  <a href="gender.html">Gender</a>
-</div>
-
-<div class="viz">
-  <h2>Viz 06 • Top 15 Countries by Total Billionaire Wealth</h2>
-  <div class="meta">Ranked comparison — total billionaire wealth (trillions scale in labeling may vary by your chart)</div>
-  <iframe src="charts/viz06_top15_total_wealth.html"></iframe>
-  <div class="insights">
-    <h3>Insights</h3>
-    <ul>
-      <li>A small set of countries holds a disproportionately large share of billionaire wealth.</li>
-      <li>The top country (often the U.S.) typically separates strongly from the rest of the ranking.</li>
-      <li>After the top few, wealth drops off quickly, highlighting steep concentration at the top.</li>
-    </ul>
+  <div class="header">
+    <h1>Economics</h1>
+    <p>
+      This section focuses on economic prosperity, scale, and distribution: how GDP per capita relates to billionaire concentration,
+      how population compares as an explanatory factor, which countries dominate total wealth, and how unequal billionaire net worth is within the population.
+    </p>
   </div>
-</div>
 
-<div class="viz">
-  <h2>Viz 07 • Billionaire Net Worth Distribution (Log Scale)</h2>
-  <div class="meta">Box plot — log scale helps reveal structure hidden by extreme outliers</div>
-  <iframe src="charts/viz07_log_box_net_worth_dark.html"></iframe>
-  <div class="insights">
-    <h3>Insights</h3>
-    <ul>
-      <li>Net worth is highly skewed: a small number of individuals sit far above the typical billionaire.</li>
-      <li>Log scaling makes mid-range differences visible instead of being dominated by the richest outliers.</li>
-      <li>The distribution supports the idea that “billionaire” is a wide category, not a single wealth level.</li>
-    </ul>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="economics.html">Economics</a>
+    <a href="corruption.html">Institutions</a>
+    <a href="gender.html">Gender</a>
   </div>
-</div>
 
-<div class="footer">
-  <a href="index.html">← Back to Home</a>
-</div>
+  <div class="viz">
+    <h2>Viz E1 · GDP per Capita vs Billionaire Count</h2>
+    <div class="meta">Scatter/bubble — prosperity and billionaire concentration</div>
+    <iframe src="charts/viz_gdp_per_capita_vs_billionaires_best.html" loading="lazy"></iframe>
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: The pattern indicates that higher GDP per capita is generally associated with more billionaires, suggesting that prosperous economies provide more opportunities for scalable value creation. Insight 2: The relationship is not perfectly linear, and outliers show that prosperity alone does not guarantee billionaire concentration—other factors (like institutions and industry mix) likely influence outcomes. Insight 3: This visualization supports the economic hypothesis that wealth creation at the extreme tail tends to be more common in high-income environments, but it also highlights the need to consider institutional quality and market structure.
+      </p>
+    </div>
+  </div>
 
-<script src="app.js"></script>
+  <div class="viz">
+    <h2>Viz E2 · Population vs Billionaire Count</h2>
+    <div class="meta">Scatter/bubble — scale versus billionaire presence</div>
+    <iframe src="charts/viz_population_bubbles.html" loading="lazy"></iframe>
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: This chart shows that population size alone is a weak predictor of billionaire count, since some large countries do not host proportional billionaire populations while some smaller countries host many. Insight 2: The mismatch suggests that the quality of economic structure and capital formation matters more than raw population scale for producing extreme wealth. Insight 3: When interpreted alongside GDP per capita, the population view helps separate “big country effects” from true wealth-ecosystem effects, strengthening the argument that prosperity and institutions matter more than size.
+      </p>
+    </div>
+  </div>
+
+  <div class="viz">
+    <h2>Viz E3 · Top 15 Countries by Total Billionaire Wealth</h2>
+    <div class="meta">Ranking — concentration at the top</div>
+    <iframe src="charts/viz06_top15_total_wealth.html" loading="lazy"></iframe>
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: The ranking highlights that global billionaire wealth is heavily concentrated among a small number of countries, indicating strong “winner-take-most” dynamics across national ecosystems. Insight 2: The steep drop after the top tier implies that wealth dominance is driven by a few highly influential markets and industries rather than being widely shared globally. Insight 3: This chart complements the GDP and population relationships by showing that even if many countries have billionaires, only a few capture a large share of total billionaire wealth.
+      </p>
+    </div>
+  </div>
+
+  <div class="viz">
+    <h2>Viz E4 · Billionaire Net Worth Distribution (Log Scale)</h2>
+    <div class="meta">Box plot — inequality within the billionaire population</div>
+    <iframe src="charts/viz07_log_box_net_worth_dark.html" loading="lazy"></iframe>
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: The distribution demonstrates extreme inequality even among billionaires, with outliers that sit far above the typical individual in the dataset. Insight 2: The log scale helps reveal structure in the “middle” of the billionaire range that would otherwise be hidden by the largest fortunes. Insight 3: This matters because national “total wealth” can be dominated by a small number of mega-fortunes, so country-level totals reflect both how many billionaires exist and how concentrated wealth is among them.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    Next: view the Institutions page to see how corruption/institutional quality relates to billionaire wealth.
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
