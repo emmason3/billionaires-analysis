@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billionaires • Prosperity • Institutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Billionaires, Prosperity, and Institutions</h1>
+  <p>
+    This project analyzes global billionaire concentration and wealth, and how they relate to
+    GDP per capita, institutional quality (CPI), and gender inequality. Each visualization includes
+    three key insights.
+  </p>
+</div>
+
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="economics.html">Economics</a>
+  <a href="corruption.html">Corruption</a>
+  <a href="gender.html">Gender</a>
+</div>
+
+<div class="viz">
+  <h2>Viz 01 • Billionaire Count by Country</h2>
+  <div class="meta">Choropleth map — concentration of billionaires</div>
+  <iframe src="charts/viz01_billionaire_count_map.html"></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <ul>
+      <li>Billionaires are concentrated in a small set of countries rather than evenly distributed globally.</li>
+      <li>Large financial and innovation ecosystems appear linked to higher billionaire presence.</li>
+      <li>Many countries show near-zero counts, illustrating extreme global inequality at the top end.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="viz">
+  <h2>Viz 02 • Total Billionaire Wealth by Country</h2>
+  <div class="meta">Choropleth map — trillions USD (scale-correct)</div>
+  <iframe src="charts/viz02_total_wealth_trillions_map.html"></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <ul>
+      <li>Total billionaire wealth is even more concentrated than billionaire counts.</li>
+      <li>A few countries dominate global private wealth, with clear outliers at the top.</li>
+      <li>This complements Viz 01 by measuring “wealth intensity,” not just headcount.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="viz">
+  <h2>Viz 05 • GDP per Capita, CPI, and Billionaire Count</h2>
+  <div class="meta">Bubble chart — prosperity + institutions + billionaire concentration</div>
+  <iframe src="charts/viz05_bubble_gdp_count_cpi.html"></iframe>
+  <div class="insights">
+    <h3>Insights</h3>
+    <ul>
+      <li>Countries with higher GDP per capita generally host more billionaires.</li>
+      <li>Higher CPI (lower corruption) often aligns with larger billionaire presence, but exceptions exist.</li>
+      <li>Outliers suggest billionaire ecosystems depend on multiple factors beyond prosperity alone.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  Hosted on GitHub Pages • Files embedded as interactive Plotly HTML
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
