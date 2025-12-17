@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Corruption (CPI) • Billionaire Wealth Project</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Page-only safety fix: prevents "weird corruption page only" layout -->
+  <style>
+    .frame-wrap { background:#fff; border-radius:14px; overflow:hidden; }
+    .frame-wrap iframe { width:100%; height:650px; border:0; display:block; }
+  </style>
 </head>
 
 <body>
@@ -19,13 +25,13 @@
       <nav class="tabs">
         <a class="tab" href="index.html">Home</a>
         <a class="tab" href="economics.html">Economics</a>
-        <a class="tab active" href="corruption.html">Institution (CPI)</a>
+        <a class="tab active" href="corruption.html">Institutions (CPI)</a>
         <a class="tab" href="gender.html">Gender</a>
       </nav>
     </header>
 
     <!-- ===================== Viz C1 ===================== -->
-    <section class="card">
+    <section class="card" id="viz-c1">
       <div class="card-head">
         <h2>Viz C1 · CPI vs Total Billionaire Wealth</h2>
         <p class="card-subtitle">Scatter — perceived corruption vs country billionaire wealth totals</p>
@@ -45,15 +51,15 @@
           This chart compares CPI scores with total billionaire wealth by country, suggesting that higher CPI (lower perceived corruption)
           often coincides with larger pools of billionaire wealth, likely because stable rules and predictable investment climates help large
           fortunes scale over time. At the same time, the presence of a few high-wealth outliers at lower CPI scores shows that extreme wealth
-          can still accumulate in weaker institutional contexts, potentially through concentrated sectors or market power. Overall, the scatter
-          indicates CPI is not a single “cause” of billionaire wealth, but it is a meaningful contextual factor that helps explain why some
-          countries are better at sustaining large, compounding wealth totals than others.
+          can still accumulate in weaker institutional contexts, potentially through concentrated sectors or market power. Overall, CPI is not a
+          single “cause” of billionaire wealth, but it is a meaningful contextual factor that helps explain why some countries are better at
+          sustaining large, compounding wealth totals than others.
         </p>
       </div>
     </section>
 
     <!-- ===================== Viz C2 ===================== -->
-    <section class="card">
+    <section class="card" id="viz-c2">
       <div class="card-head">
         <h2>Viz C2 · CPI vs Billionaire Count</h2>
         <p class="card-subtitle">Scatter — perceived corruption vs number of billionaires</p>
