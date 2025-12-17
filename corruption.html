@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Corruption • Billionaires Project</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Institutions • Billionaires Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-<div class="header">
-  <h1>Corruption / Institutions</h1>
-  <p>How institutional quality (CPI) relates to billionaire wealth and concentration.</p>
-</div>
-
-<div class="nav">
-  <a href="index.html">Home</a>
-  <a href="economics.html">Economics</a>
-  <a href="corruption.html">Corruption</a>
-  <a href="gender.html">Gender</a>
-</div>
-
-<div class="viz">
-  <h2>Viz 09 • Top 15 Countries by Billionaire Count</h2>
-  <div class="meta">Ranked comparison — where billionaire populations are largest</div>
-  <iframe src="charts/viz09_top15_billionaire_count.html"></iframe>
-  <div class="insights">
-    <h3>Insights</h3>
+  <div class="header">
+    <h1>Institutions (Corruption / CPI)</h1>
     <p>
-      This visualization shows how countries with stronger institutional quality, measured by CPI, tend to concentrate more billionaire wealth overall, while also revealing notable exceptions. Some nations accumulate large fortunes despite weaker CPI scores, suggesting that factors such as market size, natural resources, or rapid economic growth can offset institutional weaknesses. The pattern highlights that institutions are especially important for sustaining and protecting wealth at scale, rather than determining whether wealth exists at all.
+      This page focuses on the Corruption Perceptions Index (CPI) and what it suggests about the relationship between institutional quality and extreme wealth.
+      CPI is an imperfect but widely used proxy for perceived public-sector corruption, and it provides a way to compare governance environments across countries.
     </p>
   </div>
-</div>
 
-<div class="footer">
-  <a href="index.html">← Back to Home</a>
-</div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="economics.html">Economics</a>
+    <a href="corruption.html">Institutions</a>
+    <a href="gender.html">Gender</a>
+  </div>
 
-<script src="app.js"></script>
+  <!-- Viz I1 -->
+  <div class="viz">
+    <h2>Viz I1 · CPI vs Billionaire Count</h2>
+    <div class="meta">Scatter — institutional quality and billionaire concentration</div>
+    <iframe src="charts/viz_cpi_vs_billionaires_best.html" loading="lazy"></iframe>
+
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: This chart suggests that countries with higher CPI scores (lower perceived corruption) often have higher billionaire counts, which is consistent with the idea that predictable rules, stronger property rights, and higher investor confidence can support entrepreneurial growth and large-scale wealth creation. Insight 2: The relationship is not perfectly linear, and the presence of outliers indicates that billionaires can emerge in diverse institutional contexts; however, the overall pattern implies that cleaner governance environments may be especially important for scaling a large billionaire population rather than producing isolated cases. Insight 3: Interpreted alongside economic indicators, this visualization helps separate “wealthy because of prosperity” from “wealthy in spite of institutional friction,” highlighting that institutions can shape how effectively countries translate economic activity into durable, high-end wealth accumulation.
+      </p>
+    </div>
+  </div>
+
+  <!-- Viz I2 -->
+  <div class="viz">
+    <h2>Viz I2 · CPI vs Total Billionaire Wealth</h2>
+    <div class="meta">Scatter — institutional quality and wealth accumulation</div>
+    <iframe src="charts/viz10_cpi_vs_total_wealth.html" loading="lazy"></iframe>
+
+    <div class="insights">
+      <h3>Insights</h3>
+      <p>
+        Insight 1: Comparing CPI to total billionaire wealth emphasizes that institutional quality may relate not only to how many billionaires a country has, but also to whether billionaire wealth can grow to very large totals, potentially through deeper capital markets and more stable long-term investment environments. Insight 2: Countries with high wealth totals but lower CPI scores illustrate that extreme wealth can still accumulate under weaker perceived governance, which may reflect resource-driven sectors, concentrated market power, or political economy dynamics; these cases are important because they show that institutions influence wealth pathways, not just wealth presence. Insight 3: Taken together with CPI vs count, this figure helps distinguish whether governance quality is more closely linked to broader billionaire participation or to the compounding of a smaller number of mega-fortunes, strengthening the interpretation of cross-country differences in wealth concentration.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    Note: CPI is perception-based and should be interpreted as a comparative indicator rather than an absolute measure of corruption.
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
